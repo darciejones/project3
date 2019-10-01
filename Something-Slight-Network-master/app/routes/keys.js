@@ -1,16 +1,10 @@
 
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize-button" style="display: none;">Authorize</button>
-    <button id="signout-button" style="display: none;">Sign Out</button>
-
-    <div id="content"></div>
-
     <script type="text/javascript">
       // Enter an API key from the Google API Console:
       //   https://console.developers.google.com/apis/credentials
-      var apiKey = 'YOUR_API_KEY';
-      // Enter the API Discovery Docs that describes the APIs you want to
+      var apiKey = 'AIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE';
+      // Enter the API Discovery DocsAIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE that describes the APIs you want to
       // access. In this example, we are accessing the People API, so we load
       // Discovery Doc found here: https://developers.google.com/people/api/rest/
       var discoveryDocs = ["https://people.googleapis.com/$discovery/rest?version=v1"];
@@ -79,3 +73,57 @@
     </script>
   </body>
 </html>
+
+
+
+
+    //  images     https://www.googleapis.com/customsearch/v1?key="YOUR_KEY"&amp;cx="ENGINE_API"&amp;q="picasso"&amp;searchType="image"&amp;fileType="png,jpg"&amp;alt=json
+    // https://support.google.com/customsearch/answer/4513882?hl=en&ctx=topic&visit_id=637054746691014928-3266630968&rd=1 
+    // https://cse.google.com/cse/create/new
+
+  
+    var api = "https://www.googleapis.com/customsearch/v1?AIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE="
+    + AIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE + "&cx=" + CSE + "&q=" + encodeURIComponent(q);
+
+try {
+var response = UrlFetchApp.fetch(api, {
+muteHttpExceptions: true
+});
+if (response.getResponseCode() == 200) {
+
+var content = JSON.parse(response);
+
+// Did the search return results?
+if (content.searchInformation.totalResults > 0) {
+
+var count = content.items.length;
+
+for (var i = 0; i < count; i++) {
+
+// Save the page title, description and hyperlink
+Logger.log(content.items[i].title); //
+Logger.log(content.items[i].snippet); //
+Logger.log(content.items[i].link); //
+}
+}
+}
+} catch (f) {
+Logger.log(f.toString()); //
+}
+
+}
+
+
+
+
+
+
+
+
+AIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE  //api key for google custom search 
+
+
+AIzaSyCCjTvsBkUTfu5TtaVbhdZB8h5-w-uCKBE
+
+
+
