@@ -72,7 +72,7 @@
 												class="glyphicon glyphicon-search"></i></button>
 									</div>
 								</div>
-							</form>
+							
 							<ul class="nav navbar-nav">
 								<li>
 									<a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
@@ -83,12 +83,23 @@
 								</li>
 								<li>
 									<a href="#"><span class="badge">badge</span></a>
-								</li>
-                            </ul>
-                            <li><a href="">User Login</a></li> 
+                                </li>
 
-                                        
-                                        
+                                    <div>
+           <label>Username:</label>
+           <input type="text" name="username"/>
+      </div>    
+      <div>
+           <label>Password:</label>
+           <input type="password" name="password"/>
+      </div>
+      <div>
+           <input type="submit" value="Log In"/>
+      </div>
+</form>
+    
+                            </ul>            
+                                                          
                                         <!--Add buttons to initiate auth sequence and sign out-->
 
                                     <!--need to add css to match otherr pages-->
@@ -104,7 +115,7 @@
     <script type="text/javascript">
       // Enter an API key from the Google API Console:
       //   https://console.developers.google.com/apis/credentials
-      var apiKey = 'YOUR_API_KEY';
+      var apiKey = 'AIzaSyAmW9_KDXr0Rrnfh1xDJkPgJLfn2MmGFuw';
       // Enter the API Discovery Docs that describes the APIs you want to
       // access. In this example, we are accessing the People API, so we load
       // Discovery Doc found here: https://developers.google.com/people/api/rest/

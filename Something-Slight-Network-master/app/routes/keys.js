@@ -1,4 +1,4 @@
-
+//google plus api and passport -- not access to the server at themomment 
 
     <script type="text/javascript">
       // Enter an API key from the Google API Console:

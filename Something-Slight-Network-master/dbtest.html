@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>mongo db test before putting into main html page</title>
+    <style>
+
+        
+      input {
+        display: block;
+        height: 36px;
+        width: 200px;
+        font-size: 24px;
+      }
+      textarea {
+        width: 200px;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/submit" method="post">
+    <h1>Register New User</h1>
+    <h2>Enter information provided to your student to create a new profile</h2>
+      <input type="text" StudentID="StudentID" placeholder="StudentID">
+      <textarea type="text" name="body" placeholder="Enter in school provided Student ID"></textarea>
+
+      <input type="text" Password="Password" placeholder="New Password">
+      <textarea type="text" name="body" placeholder="Create a new password"></textarea>
+
+      <input type="text" School="School" placeholder="School curently enrolled at">
+      <textarea type="text" name="body" placeholder="School currently enrolled at"></textarea>
+
+      <input type="text" EnrollingParent="EnrollingParent" placeholder="Enrolling Parent">
+      <textarea type="text" name="body" placeholder="Enrolling Parent"></textarea>
+
+      <input type="text" Tutor="Tutor" placeholder="Request a Tutor">
+      <textarea type="text" name="body" placeholder="Ability to request a tutor"></textarea>
+
+
+      <input type="submit">
+      <a href="/info">See your private info</a>
+      <a href="/user">See your profile.</a>
+      <a href="/populateduser">Modifications/updated info</a>
+    </form>
+  </body>
+</html>
